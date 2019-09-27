@@ -1,0 +1,186 @@
+body {
+  font-family: arial; }
+
+/*-----------------------------------------------header start ---------------------------------------- */
+#logocontainer {
+  background-color: #fff3f3;
+  padding: 15px; }
+  #logocontainer a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  @media only screen and (max-width: 480px) {
+    #logocontainer #bannerheader {
+      display: none; } }
+  @media only screen and (min-width: 481px) and (max-width: 799px) {
+    #logocontainer #bannerheader {
+      display: none; } }
+
+.navcontainer {
+  background-color: #8e1616; }
+  .navcontainer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0; }
+    @media only screen and (max-width: 480px) {
+      .navcontainer ul {
+        justify-content: center; } }
+    @media only screen and (min-width: 481px) and (max-width: 799px) {
+      .navcontainer ul {
+        justify-content: center; } }
+    .navcontainer ul a {
+      display: block;
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 1.2em; }
+    .navcontainer ul li a:hover {
+      background-color: #cecece; }
+
+/* --------------------------------------------header end --------------------------------------------- */
+/*-----------------------------main start------------------------------------- */
+#imgBackground {
+  position: relative;
+  background-color: #cecece; }
+  #imgBackground img {
+    width: 100%; }
+  #imgBackground h1 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 100%;
+    display: block;
+    color: white;
+    font-size: 2.3em;
+    font-weight: normal; }
+  #imgBackground #formWrapper {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    border: 1px solid darkgrey;
+    background-color: rgba(255, 255, 255, 0.7); }
+    #imgBackground #formWrapper #formHeading {
+      text-align: center;
+      padding: 0 20%;
+      color: #4d4d4d;
+      font-size: 2em; }
+    #imgBackground #formWrapper #formContainer {
+      display: flex;
+      justify-content: space-around; }
+      #imgBackground #formWrapper #formContainer .form {
+        font-zize: 1em;
+        width: 30%; }
+        @media only screen and (min-width: 481px) and (max-width: 799px) {
+          #imgBackground #formWrapper #formContainer .form {
+            width: 50%;
+            margin-bottom: 20px; } }
+        @media only screen and (max-width: 480px) {
+          #imgBackground #formWrapper #formContainer .form {
+            width: 100%;
+            margin-bottom: 20px; } }
+        #imgBackground #formWrapper #formContainer .form input, #imgBackground #formWrapper #formContainer .form select {
+          width: 100%;
+          padding: 10px 20px;
+          margin: 4px 0 20px;
+          display: inline-block;
+          border: 1px solid #cecece;
+          border-radius: 4px;
+          box-sizing: border-box; }
+    #imgBackground #formWrapper #btnContainer {
+      text-align: center; }
+      #imgBackground #formWrapper #btnContainer button {
+        width: 30%;
+        background-color: #339235;
+        color: white;
+        padding: 10px 20px;
+        margin: 8px auto;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 1.5em; }
+      #imgBackground #formWrapper #btnContainer button:hover {
+        background-color: #131313; }
+    #imgBackground #formWrapper #textCalc p {
+      font-size: 2em;
+      color: #339235;
+      text-align: center; }
+
+#textContainer {
+  background-color: #cecece; }
+  #textContainer h2 {
+    margin: 0 auto;
+    color: #4d4d4d;
+    text-align: center;
+    padding-top: 5%; }
+  #textContainer p {
+    color: #4d4d4d;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 20px; }
+
+#cardContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 30px 50px; }
+  #cardContainer .card {
+    width: 30%;
+    border: 1px solid #cecece;
+    box-shadow: 5px 5px 5px lightgrey;
+    padding: 35px; }
+    @media only screen and (min-width: 481px) and (max-width: 799px) {
+      #cardContainer .card {
+        width: 50%;
+        margin-bottom: 20px; } }
+    @media only screen and (max-width: 480px) {
+      #cardContainer .card {
+        width: 100%;
+        margin-bottom: 20px; } }
+    #cardContainer .card h3 {
+      margin: 0;
+      font-weight: normal;
+      color: #5b9bb7; }
+    #cardContainer .card p {
+      margin: 0;
+      font-size: 0.7em; }
+    #cardContainer .card .textIcon {
+      padding: 8px 0; }
+    #cardContainer .card .cardTextBold {
+      font-weight: bold; }
+    #cardContainer .card i {
+      margin-right: 5px;
+      color: #5b9bb7; }
+    #cardContainer .card hr {
+      border: 0.5px solid #5b9bb7; }
+
+/*--------------------------------------------Footer Start-------------------------------- */
+footer {
+  margin-top: 20px;
+  background-color: #131313; }
+  footer #navcontainerFooter {
+    background-color: #131313; }
+  footer #navlinksfooter {
+    font-size: 1em; }
+  @media only screen and (max-width: 480px) {
+    footer #footerlogo {
+      text-align: center; } }
+  @media only screen and (min-width: 481px) and (max-width: 799px) {
+    footer #footerlogo {
+      text-align: center; } }
+  @media only screen and (min-width: 800px) {
+    footer #footerlogo {
+      text-align: right;
+      padding-right: 10px; } }
+  footer p {
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 0.8em; }
+
+/*--------------------------------------------Footer End-------------------------------------- */
+
+/*# sourceMappingURL=style.css.map */
