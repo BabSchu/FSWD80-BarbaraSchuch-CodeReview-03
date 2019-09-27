@@ -104,7 +104,8 @@ body {
         font-size: 1.5em; }
       #imgBackground #formWrapper #btnContainer button:hover {
         background-color: #131313; }
-    #imgBackground #formWrapper #textCalc p {
+    #imgBackground #formWrapper #textCalc {
+      text-align: center;
       font-size: 2em;
       color: #339235;
       text-align: center; }
