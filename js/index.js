@@ -10,17 +10,17 @@
 
 	switch (country) {
 		case "Austria":
-			insuranceAustria = horse_power*100/age+50;
+			insuranceAustria = horse_power * 100 / age + 50;
 			document.getElementById("textCalc").innerHTML = 
 			name + ", your insurance costs "+ Math.round(insuranceAustria) + " Euro";
 			break;
-	 	case "Hungary":
-			insuranceHungary = horse_power*120/age+100;
+		case "Hungary":
+			insuranceHungary = horse_power * 120 / age + 100;
 			document.getElementById("textCalc").innerHTML = 
 			name + ", your insurance costs "+ Math.round(insuranceHungary) + " Euro";
 			break;
-	 	case "Greece":
-			insuranceGreece = horse_power*150/(age+3)+50;
+		case "Greece":
+			insuranceGreece = horse_power * 150 / (age + 3) + 50;
 			document.getElementById("textCalc").innerHTML = 
 			name + ", your insurance costs "+ Math.round(insuranceGreece) + " Euro";
 			break;
@@ -32,6 +32,7 @@
 
 document.getElementById("calcBtn").onclick = calculateInsurance;
 */
+
 //version 2:
 
 function calculateInsurance () {
@@ -75,4 +76,6 @@ function calculateInsurance () {
 //var clickbutton = document.getElementById("calcBtn"); // fetches button("Id=calcBtn") from the html and saves in a var
 //clickbutton.addEventListener("click",calculateInsurance); // fires function on button click
 
-document.getElementById("calcBtn").addEventListener("click",calculateInsurance);//same only in one line
+//same only in one line
+
+document.getElementById("calcBtn").addEventListener("click",calculateInsurance);

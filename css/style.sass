@@ -25,14 +25,7 @@ $break-large: 800px
 			@content
 
 body
-	font-family: arial
-
-	// @include respond-to(handhelds)
-	// 	background-color: red
-	// @include respond-to(medium-screens)
-	// 	background-color: green
-	// @include respond-to(wide-screens)
-	// 	background-color: blue                      
+	font-family: arial                   
 
 /*-----------------------------------------------header start ----------------------------------------*/
 
@@ -74,8 +67,6 @@ body
 
 		li a:hover
 			background-color: $third-color
-
-
 
 /* --------------------------------------------header end ---------------------------------------------*/
 /*-----------------------------main start-------------------------------------*/
@@ -156,9 +147,7 @@ body
 			text-align: center
 			font-size: 2em
 			color: $fith-color
-			text-align: center
-
-	
+			text-align: center	
 
 #textContainer
 	background-color: $third-color
@@ -202,6 +191,9 @@ body
 			margin: 0
 			font-size: 0.7em
 
+			#textFont
+				font-family: "Times New Roman", Times, serif
+
 		.textIcon
 			padding: 8px 0
 
@@ -214,9 +206,6 @@ body
 
 		hr
 			border: 0.5px solid $third-text-color
-
-
-
 
 /*--------------------------------------------Footer Start--------------------------------*/
 
@@ -237,11 +226,40 @@ footer
 			text-align: center
 		@include respond-to(wide-screens)
 			text-align: right
-			padding-right: 10px		
-
+			padding-right: 10px
 	p
 		color: $primary-text-color
 		text-align: center
 		padding-bottom: 5px
 		font-size: 0.8em
 /*--------------------------------------------Footer End--------------------------------------*/
+/*----------------------------------------------Team Start ---------------------------------*/
+#teamMain
+	h1
+		color: $third-text-color
+		text-align: center
+
+#teamContainer
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+	margin-top: 30px
+
+	.teamMembers
+		@include respond-to(wide-screens)
+			width: 27%
+		@include respond-to(handhelds)
+			width: 100%
+		text-align: center
+		font-size: 1.5em
+		font-weight: bold
+
+		.printName
+			color: $third-text-color
+
+		img
+			width: 100%
+			border: 5px solid $third-text-color
+			border-radius: 50%
+
+/*----------------------------------------------Team End ---------------------------------*/

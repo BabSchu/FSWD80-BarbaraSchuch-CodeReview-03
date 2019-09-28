@@ -148,6 +148,8 @@ body {
     #cardContainer .card p {
       margin: 0;
       font-size: 0.7em; }
+      #cardContainer .card p #textFont {
+        font-family: "Times New Roman", Times, serif; }
     #cardContainer .card .textIcon {
       padding: 8px 0; }
     #cardContainer .card .cardTextBold {
@@ -183,5 +185,33 @@ footer {
     font-size: 0.8em; }
 
 /*--------------------------------------------Footer End-------------------------------------- */
+/*----------------------------------------------Team Start --------------------------------- */
+#teamMain h1 {
+  color: #5b9bb7;
+  text-align: center; }
+
+#teamContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px; }
+  #teamContainer .teamMembers {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold; }
+    @media only screen and (min-width: 800px) {
+      #teamContainer .teamMembers {
+        width: 27%; } }
+    @media only screen and (max-width: 480px) {
+      #teamContainer .teamMembers {
+        width: 100%; } }
+    #teamContainer .teamMembers .printName {
+      color: #5b9bb7; }
+    #teamContainer .teamMembers img {
+      width: 100%;
+      border: 5px solid #5b9bb7;
+      border-radius: 50%; }
+
+/*----------------------------------------------Team End --------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
