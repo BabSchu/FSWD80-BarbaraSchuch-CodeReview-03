@@ -79,3 +79,45 @@ function calculateInsurance () {
 //same only in one line
 
 document.getElementById("calcBtn").addEventListener("click",calculateInsurance);
+
+
+//Version 3:
+
+/*function CalcConstructor (parameter1,parameter2,parameter3) {
+
+	this.parameter1 = parameter1;
+	this.parameter2 = parameter2;
+	this.parameter3 = parameter3;
+
+	this.mes = function (){
+		this.age = document.getElementById("age").value;
+		this.horsepower = document.getElementById("horsepower").value;
+		this.name = document.getElementById("name").value;
+		result = Number(this.horsepower) * parameter1 / (Number(this.age) + parameter3) + parameter2;
+		resultRounded = Math.round(result);
+		document.getElementById("textCalc").innerHTML = this.name + ", your insurance costs " + resultRounded + " €.";
+		console.log(result);
+	}
+}
+
+option1 = new CalcConstructor (100,50,0);
+option2 = new CalcConstructor (120,100,0);
+option3 = new CalcConstructor (150,50,3);
+
+function choose() {
+
+	var selCountry = document.getElementById("country"); 
+	var country = selCountry.options[selCountry.selectedIndex].text;
+
+	if (country == "Austria"){
+		option1.mes();
+	}
+	else if (country == "Hungary"){
+		option2.mes();
+	}
+	else {option3.mes();
+	}
+}
+
+var clickbutton = document.getElementById("calcBtn");
+clickbutton.addEventListener("click", choose);*/
